@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const babel = require('gulp-babel');
 var exec = require('child_process').execSync;
 const clean = require('gulp-clean');
+const path = require('path');
 
 const destination = './dist';
 
@@ -22,8 +23,10 @@ gulp.task('default', ['extra'], ()=> {
 });
 
 gulp.task('publish', ['default'], (callback) => {
-    exec('node_modules/.bin/claudia update --set-env-from-json ../lambda-vars.json',
-        {
-            "cwd": destination
-        });
+    var claudiaExe = path.join(__dirname, 'node_modules/.bin/claudia');
+
+    exec(claudiaExe + ' update --set-env-from-json ../lambda-vars.json',
+    {
+        "cwd": destination
+    });
 });

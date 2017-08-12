@@ -1,6 +1,6 @@
 {
   "name": "generator-apiai-lambda",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Creates a basic API.AI webhook handler that can be hosted on AWS Lambda",
   "files": [
     "generators"
