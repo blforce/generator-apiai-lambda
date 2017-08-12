@@ -1,0 +1,29 @@
+{
+  "name": "generator-apiai-lambda",
+  "version": "1.0.1",
+  "description": "Creates a basic API.AI webhook handler that can be hosted on AWS Lambda",
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "aws",
+    "lambda",
+    "apiai",
+    "nodejs",
+    "claudia"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blforce/generator-apiai-lambda.git"
+  },
+  "author": "Ben Force",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blforce/generator-apiai-lambda/issues"
+  },
+  "homepage": "https://github.com/blforce/generator-apiai-lambda#readme",
+  "dependencies": {
+    "yeoman-generator": "^1.1.1"
+  }
+}

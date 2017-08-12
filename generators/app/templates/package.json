@@ -1,0 +1,11 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "description": "<%= description %>",
+  "scripts": {
+    "build": "node_modules/.bin/gulp",
+    "publish": "node_modules/.bin/gulp publish"
+  },
+  "author": "<%= author %>",
+  "license": "<%= license %>"
+}
